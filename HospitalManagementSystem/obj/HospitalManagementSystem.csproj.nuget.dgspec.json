@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ariful\\EHospital\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {}
+    "D:\\Software\\Dipu\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\Ariful\\EHospital\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {
+    "D:\\Software\\Dipu\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ariful\\EHospital\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+        "projectUniqueName": "D:\\Software\\Dipu\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
         "projectName": "HospitalManagementSystem",
-        "projectPath": "D:\\Ariful\\EHospital\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Ariful\\EHospital\\EHospital\\HospitalManagementSystem\\obj\\",
+        "projectPath": "D:\\Software\\Dipu\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\Software\\Dipu\\EHospital\\HospitalManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -127,7 +127,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
