@@ -42,5 +42,24 @@ namespace HospitalManagementSystem.Services
                 _context.doctors.Add(doctor);
             return 1 == await _context.SaveChangesAsync();
         }
+
+        public async Task<int> GetAppoinmentNo(int docId,DateTime date)
+        {
+            var c= await _context.appoinments.Where(x => x.doctorId == docId &&
+                (x.date.HasValue ? x.date.Value.Date == date.Date : DateTime.Now.Date == date.Date)).CountAsync();
+            return c+1;
+        }
+        public async Task<bool> SaveAppoinment(Appoinment appoinment)
+        {
+            if (appoinment.Id != 0)
+                _context.appoinments.Update(appoinment);
+            else
+                _context.appoinments.Add(appoinment);
+            return 1 == await _context.SaveChangesAsync();
+        }
+        public async Task<IEnumerable<Appoinment>> GetAppoinmentList()
+        {
+            return await _context.appoinments.Include(x => x.doctor).AsNoTracking().ToListAsync();
+        }
     }
 }

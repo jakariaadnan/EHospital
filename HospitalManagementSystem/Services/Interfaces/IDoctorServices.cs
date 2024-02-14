@@ -9,5 +9,8 @@ namespace HospitalManagementSystem.Services.Interfaces
         Task<Doctor> GetDoctorById(int id);
         Task<bool> SaveDoctor(Doctor doctor);
         Task<bool> DeleteDoctorById(int id);
+        Task<int> GetAppoinmentNo(int docId, DateTime date);
+        Task<bool> SaveAppoinment(Appoinment appoinment);
+        Task<IEnumerable<Appoinment>> GetAppoinmentList();
     }
 }
