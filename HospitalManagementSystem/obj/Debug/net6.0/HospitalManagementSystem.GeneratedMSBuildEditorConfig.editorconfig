@@ -9,97 +9,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HospitalManagementSystem
 build_property.RootNamespace = HospitalManagementSystem
-build_property.ProjectDir = D:\Software\Dipu\EHospital\HospitalManagementSystem\
+build_property.ProjectDir = D:\Ariful\EHospital\EHospital\HospitalManagementSystem\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\Software\Dipu\EHospital\HospitalManagementSystem
+build_property.MSBuildProjectDirectory = D:\Ariful\EHospital\EHospital\HospitalManagementSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Admin/Views/Home/Index.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Admin/Views/_ViewImports.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Auth/Views/Account/Login.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Auth/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aFxWaWV3c1xBY2NvdW50XExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Auth/Views/Account/Register.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Auth/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aFxWaWV3c1xBY2NvdW50XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Auth/Views/Account/UserRoleCreate.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Auth/Views/Account/UserRoleCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aFxWaWV3c1xBY2NvdW50XFVzZXJSb2xlQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Auth/Views/_ViewImports.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Auth/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Doctor/Views/Home/DoctorInfo.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Doctor/Views/Home/DoctorInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yXFZpZXdzXEhvbWVcRG9jdG9ySW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Doctor/Views/Home/Index.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Doctor/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Doctor/Views/MasterData/Department.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Doctor/Views/MasterData/Department.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yXFZpZXdzXE1hc3RlckRhdGFcRGVwYXJ0bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Doctor/Views/_ViewImports.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Doctor/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRG9jdG9yXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Public/Views/Home/Dashboard.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Public/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXEhvbWVcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Public/Views/Home/Index.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Public/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Areas/Public/Views/_ViewImports.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Areas/Public/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/Error.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/Index.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/Privacy.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/Shared/_LayoutInitial.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/Shared/_LayoutInitial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRJbml0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/Shared/_MasterDataForm.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/Shared/_MasterDataForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYXN0ZXJEYXRhRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/_ViewImports.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/_ViewStart.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Software/Dipu/EHospital/HospitalManagementSystem/Views/Shared/_Layout.cshtml]
+[D:/Ariful/EHospital/EHospital/HospitalManagementSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lylxlz6yg0
