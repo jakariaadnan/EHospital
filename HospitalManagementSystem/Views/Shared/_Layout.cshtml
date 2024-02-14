@@ -1,0 +1,219 @@
+﻿@using HospitalManagementSystem.Services.Interfaces
+@using System
+@inject IUserInfoService loggedinUser
+@{
+    List<string> userRoles = await loggedinUser.UsersRoles(User.Identity.Name);
+    var UserInfo = await loggedinUser.GetUserBasicInfoes(User.Identity.Name);
+    var image = "img/a4.jpg";
+    if (UserInfo.ImagePath != null)
+    {
+        image = UserInfo.ImagePath;
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management | Home Page</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+
+
+    <link href="~/SweetAlert/sweetalert2.css" rel="stylesheet" />
+
+    <style>
+        /*Parsly  Section*/
+        input.parsley-success,
+        select.parsley-success,
+        textarea.parsley-success {
+            color: #468847;
+            background-color: #DFF0D8;
+            border: 1px solid #D6E9C6;
+        }
+
+        input.parsley-error,
+        select.parsley-error,
+        textarea.parsley-error {
+            color: #B94A48;
+            background-color: #F2DEDE;
+            border: 1px solid #EED3D7;
+        }
+
+        .parsley-errors-list {
+            margin: 2px 0 3px;
+            padding: 0;
+            list-style-type: none;
+            font-size: 0.9em;
+            line-height: 0.9em;
+            opacity: 0;
+            transition: all .3s ease-in;
+            -o-transition: all .3s ease-in;
+            -moz-transition: all .3s ease-in;
+            -webkit-transition: all .3s ease-in;
+        }
+
+            .parsley-errors-list.filled {
+                opacity: 1;
+            }
+
+        .parsley-type, .parsley-required, .parsley-equalto {
+            color: #ff0000;
+        }
+        /*Parsly  Section*/
+    </style>
+
+
+    @RenderSection("Style", required: false)
+
+</head>
+
+
+<body class="">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded-circle" src="~/@image" height="128" width="128" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">@UserInfo.FullName</span>
+                                <span class="text-muted text-xs block">@User.Identity.Name <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Contacts</a></li>
+                                <li><a class="dropdown-item" href="#">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            EH
+                        </div>
+                    </li>
+                    <li @(userRoles.Contains("Super Admin") ? "" : "style=display:none")>
+                        <a href="/"><i class="fa fa-pie-chart"></i> <span class="nav-label">Dashboard</span>  </a>
+                    </li>
+                    <li @(userRoles.Contains("Super Admin") ? "" : "style=display:none")>
+                        <a href="/Doctor/Home/DoctorInfo"><i class="fa fa-pie-chart"></i> <span class="nav-label">Doctor</span>  </a>
+                    </li>
+
+                    <li>
+                        <a href="/PatientInformation/Patient/Create"><i class="fa fa-pie-chart"></i> <span class="nav-label">Create New Patient</span>  </a>
+                    </li>
+
+                    <li>
+                        <a href="/PatientInformation/Patient/PatientList"><i class="fa fa-pie-chart"></i> <span class="nav-label">Patient List</span>  </a>
+                    </li>
+                    <li>
+                        <a href="/PatientInformation/Patient/PatientSearchList"><i class="fa fa-pie-chart"></i> <span class="nav-label">Patient Search</span>  </a>
+                    </li>
+
+                    <li @(userRoles.Contains("Super Admin") ? "" : "style=display:none")>
+                        <a href="/Auth/Account/UserRoleCreate"><i class="fa fa-pie-chart"></i> <span class="nav-label">Create Role</span>  </a>
+                    </li>
+
+                    <li @(userRoles.Contains("Super Admin") ? "" : "style=display:none")>
+                        <a href="/Auth/Account/Register"><i class="fa fa-pie-chart"></i> <span class="nav-label">Register</span>  </a>
+                    </li>
+
+                    <li @(userRoles.Contains("Admin") ? "" : "style=display:none")>
+                        <a href="/Auth/Account/Register"><i class="fa fa-pie-chart"></i> <span class="nav-label">Register</span>  </a>
+                    </li>
+
+                    <li @(userRoles.Contains("Super Admin") ? "" : "style=display:none")>
+                        <a href="#"><i class="fa fa-pie-chart"></i> <span class="nav-label">Master Data</span>  </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="/Doctor/MasterData/Department">Department</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to E-Hospital.</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-sign-out" data-toggle="modal" data-target="#logoutModal">Log out</i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            @RenderBody()
+
+            <div class="footer">
+                @*<div class="float-right">
+                    10GB of <strong>250GB</strong> Free.
+                </div>
+                <div>
+                    <strong>Copyright</strong> Codewings Bangladesh Ltd &copy; @DateTime.Now.Year
+                </div>*@
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <form asp- method="post" asp-area="Auth" asp-controller="Account" asp-action="Logout" id="logoutForm" class="navbar-right">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <button type="submit" onclick="ClearLocalStorage()" class="btn btn-success">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="~/js/jquery-3.1.1.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="~/js/inspinia.js"></script>
+    <script src="~/js/plugins/pace/pace.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="~/SweetAlert/sweetalert2.common.js"></script>
+    <script src="~/SweetAlert/sweetalert2.js"></script>
+    <script type="text/javascript" src="~/js/common.js"></script>
+
+    <!-- Parsley -->
+    <script src="~/js/parsley.js" type="text/javascript"></script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

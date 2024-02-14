@@ -1,0 +1,231 @@
+﻿@model PublicViewModel;
+@{
+    ViewData["Title"] = "E-Hospital";
+    Layout = "~/Views/Shared/_LayoutInitial.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+    <header>
+        <div class="section__container header__container">
+            <div class="header__content">
+                <h1>Providing an Exceptional Patient Experience</h1>
+                <p>
+                    Welcome, where exceptional patient experiences are our priority.
+                    With compassionate care, state-of-the-art facilities, and a
+                    patient-centered approach, we're dedicated to your well-being. Trust
+                    us with your health and experience the difference.
+                </p>
+                <button class="btn">See Services</button>
+            </div>
+            <div class="header__form">
+                <form>
+                    <h4>Book Now</h4>
+                    <input type="text" id="txtFName" placeholder="First Name" />
+                    <input type="text" id="txtLName" placeholder="Last Name" />
+                    <input type="text" id="txtAddress" placeholder="Address" />
+                    <input type="text" id="txtPhone" placeholder="Phone No." />
+                    <button type="button" class="btn form__btn" id="appBtn" data-toggle="modal" data-target="#staticBackdrop">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="section__container about__container">
+        <div class="about__content">
+            <h2 class="section__header">About Us</h2>
+            <p>
+                Welcome to our healthcare website, your one-stop destination for
+                reliable and comprehensive health care information. We are committed
+                to promoting wellness and providing valuable resources to empower you
+                on your health journey.
+            </p>
+            <p>
+                Explore our extensive collection of expertly written articles and
+                guides covering a wide range of health topics. From understanding
+                common medical conditions to tips for maintaining a healthy lifestyle,
+                our content is designed to educate, inspire, and support you in making
+                informed choices for your health.
+            </p>
+            <p>
+                Discover practical health tips and lifestyle advice to optimize your
+                physical and mental well-being. We believe that small changes can lead
+                to significant improvements in your quality of life, and we're here to
+                guide you on your path to a healthier and happier you.
+            </p>
+        </div>
+        <div class="about__image">
+            <img src="/assets/about.jpg" alt="about" />
+        </div>
+    </section>
+
+    <section class="section__container why__container">
+        <div class="why__image">
+            <img src="/assets/choose-us.jpg" alt="why choose us" />
+        </div>
+        <div class="why__content">
+            <h2 class="section__header">Why Choose Us</h2>
+            <p>
+                With a steadfast commitment to your well-being, our team of highly
+                trained healthcare professionals ensures that you receive nothing
+                short of exceptional patient experiences.
+            </p>
+            <div class="why__grid">
+                <span><i class="ri-hand-heart-line"></i></span>
+                <div>
+                    <h4>Intensive Care</h4>
+                    <p>
+                        Our Intensive Care Unit is equipped with advanced technology and
+                        staffed by team of professionals
+                    </p>
+                </div>
+                <span><i class="ri-truck-line"></i></span>
+                <div>
+                    <h4>Free Ambulance Car</h4>
+                    <p>
+                        A compassionate initiative to prioritize your health and
+                        well-being without any financial burden.
+                    </p>
+                </div>
+                <span><i class="ri-hospital-line"></i></span>
+                <div>
+                    <h4>Medical and Surgical</h4>
+                    <p>
+                        Our Medical and Surgical services offer advanced healthcare
+                        solutions to address medical needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container doctors__container">
+        <div class="doctors__header">
+            <div class="doctors__header__content">
+                <h2 class="section__header">Our Special Doctors</h2>
+                <p>
+                    We take pride in our exceptional team of doctors, each a specialist
+                    in their respective fields.
+                </p>
+            </div>
+            <div class="doctors__nav">
+                <span><i class="ri-arrow-left-line"></i></span>
+                <span><i class="ri-arrow-right-line"></i></span>
+            </div>
+        </div>
+        <div class="doctors__grid">
+            <div class="doctors__card">
+                <div class="doctors__card__image">
+                    <img src="/assets/doctor-1.jpg" alt="doctor" />
+                    <div class="doctors__socials">
+                        <span><i class="ri-instagram-line"></i></span>
+                        <span><i class="ri-facebook-fill"></i></span>
+                        <span><i class="ri-heart-fill"></i></span>
+                        <span><i class="ri-twitter-fill"></i></span>
+                    </div>
+                </div>
+                <h4>Dr. Emily Smith</h4>
+                <p>Cardiologist</p>
+            </div>
+            <div class="doctors__card">
+                <div class="doctors__card__image">
+                    <img src="/assets/doctor-2.jpg" alt="doctor" />
+                    <div class="doctors__socials">
+                        <span><i class="ri-instagram-line"></i></span>
+                        <span><i class="ri-facebook-fill"></i></span>
+                        <span><i class="ri-heart-fill"></i></span>
+                        <span><i class="ri-twitter-fill"></i></span>
+                    </div>
+                </div>
+                <h4>Dr. James Anderson</h4>
+                <p>Neurosurgeon</p>
+            </div>
+            <div class="doctors__card">
+                <div class="doctors__card__image">
+                    <img src="/assets/doctor-3.jpg" alt="doctor" />
+                    <div class="doctors__socials">
+                        <span><i class="ri-instagram-line"></i></span>
+                        <span><i class="ri-facebook-fill"></i></span>
+                        <span><i class="ri-heart-fill"></i></span>
+                        <span><i class="ri-twitter-fill"></i></span>
+                    </div>
+                </div>
+                <h4>Dr. Michael Lee</h4>
+                <p>Dermatologist</p>
+            </div>
+        </div>
+    </section>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="staticBackdrop" data-backdrop="static" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title col-12 text-center" id="staticBackdropLabel">Doctor Appoinment</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="card col-11 m-4">
+                        <div class="card-header">
+                            <h4 id="lblName"></h4>
+                            <h6 id="lblAdd"></h6>
+                            <h5 id="lblPhone"></h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 row">
+                                    <label class="col-form-label col-5">Appinment Date</label>
+                                    <input class="form-control col-7" type="text" readonly id="date" name="date"/>
+                                </div>
+                                <div class="col-12 row">
+                                    <label class="col-form-label col-5">Select Department</label>
+                                    @foreach (var item in Model.departments)
+                                    {
+                                        <div class="col-3 m-1 btn card-header" onclick="loadDoctor(@item.Id)">@item.name</div>
+                                    }
+                                </div>
+                                <div class="col-12 row mt-2" id="doctorDiv" style="display:none">
+                                    @foreach (var item in Model.doctors)
+                                    {
+                                        <div class="col-3 m-1 btn card-header dept dept@(item.departmentId)">@item.name</div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Book Appoinment</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#date').datepicker({ dateFormat: "dd-M-yy", showAnim: "scale", changeMonth: true, changeYear: true, yearRange: "1960:2100" });
+
+        })
+        function loadDoctor(dId) {
+            $('.dept').hide();
+            $('.dept'+dId).show();
+            $('#doctorDiv').show();
+        }
+        $('#appBtn').click(function(){
+            var fName = $('#txtFName').val();
+            var lName = $('#txtLName').val();
+            var add = $('#txtAddress').val();
+            var phone = $('#txtPhone').val();
+            $('#lblName').empty().append('Name: '+fName + ' ' + lName);
+            $('#lblAdd').empty().append('Address: '+add);
+            $('#lblPhone').empty().append('Mobile: '+phone);
+        })
+    </script>
+}
+

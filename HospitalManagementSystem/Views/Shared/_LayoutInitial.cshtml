@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+
+<html translate="no">
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="google" content="notranslate">
+    <title>@ViewData["Title"] - HMS</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/css/sweetalert.css" rel="stylesheet" />
+    <!-- Custom fonts for this template-->
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom Date Picker-->
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom styles for this page -->
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" as="style" onload="this.onload = null;this.rel = 'stylesheet'" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" as="style" onload="this.onload = null;this.rel = 'stylesheet'" rel="preload">
+
+    <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
+    <link href="~/SweetAlert/sweetalert2.css" rel="stylesheet" />
+    <style>
+        @@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        body {
+            font-size: 11pt !important;
+            /*font-family: "SolaimanLipi" !important;*/
+            /*font-family: 'Roboto', sans-serif;*/
+            font-family: 'Kalpurush', sans-serif !important;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            overflow-x: hidden;
+        }
+
+        /*for tab control*/
+        div.login-logout-tab div.card-header {
+            padding: 0px 0px 12px 0px;
+        }
+
+        div.login-logout-tab ul.nav-tabs {
+            margin: 0px 0px -12px 0px;
+        }
+
+        div.login-logout-tab li.nav-item {
+            width: 50%;
+        }
+
+        div.login-logout-tab a.nav-link {
+            font-size: 25px;
+            color: #495057;
+            text-align: center;
+        }
+
+        div.card-content {
+            padding: 10px 20px;
+        }
+
+        /*login form*/
+        div.login-form-icon {
+            text-align: center;
+        }
+
+        /* Wrapping element */
+        /* Set some basic padding to keep content from hitting the edges */
+        .body-content {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* Carousel */
+        .carousel-caption p {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        /* Make .svg files in the carousel display properly in older browsers */
+        .carousel-inner .item img[src$=".svg"] {
+            width: 100%;
+        }
+
+        li {
+            /*font-weight: bold;*/
+        }
+
+        .btn_common_cls {
+            /*background: black;
+                    height: 30px;
+                    margin-top: 45%;
+                    color: white;
+                    border-radius: 16px;
+                    text-align: center;*/
+        }
+
+        .mainMenu {
+            font-size: 13pt;
+        }
+
+        @@media screen and (max-width: 1000px) {
+            .mobileUserHide {
+                display: none
+            }
+
+            .mobileUserShow span {
+                display: inline !important;
+            }
+
+            #sidebarToggleTop {
+                display: none !important;
+            }
+        }
+
+        @@media screen and (max-width: 680px) {
+            .mobileUserHide {
+                display: none
+            }
+
+            .mobileUserShow1 span {
+                display: inline !important;
+            }
+
+            #sidebarToggleTop {
+                display: none !important;
+            }
+        }
+    </style>
+
+
+
+    <style>
+        .lng_btn_cls {
+            background: none;
+            font-size: 27px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+
+    @RenderSection("Style", required: false)
+</head>
+<body>
+
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand navbar-light topbar static-top shadow" style="background: linear-gradient(-90deg, #46e8eb 5%, white 100%);">
+        <ul class="mb-0" style="width:70%;margin-left:-40px;">
+            <marquee style="color:#46e8eb;font-size:30px;font-weight:bold;margin-top:10px;font-family:Kalpurush">Welcome To E-Hospital</marquee>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item">
+                <a class="nav-link btn_common_cls mobileUserShow mobileUserShow1" href="/Auth/Account/LogIn" id="userDropdown_01">
+                    <span class="btn btn-primary btn-sm" id="Home" style="color: white;">Log In</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    @RenderBody()
+    <!-- Mainly scripts -->
+    <script src="~/js/jquery-3.1.1.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="~/js/inspinia.js"></script>
+    <script src="~/js/plugins/pace/pace.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="~/SweetAlert/sweetalert2.common.js"></script>
+    <script src="~/SweetAlert/sweetalert2.js"></script>
+    <script type="text/javascript" src="~/js/common.js"></script>
+
+    <!-- Parsley -->
+    <script src="~/js/parsley.js" type="text/javascript"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
