@@ -11883,11 +11883,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ariful\\EHospital\\jakariaadnan\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+      "projectUniqueName": "D:\\Ariful\\EHospital\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
       "projectName": "HospitalManagementSystem",
-      "projectPath": "D:\\Ariful\\EHospital\\jakariaadnan\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+      "projectPath": "D:\\Ariful\\EHospital\\EHospital\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "D:\\Ariful\\EHospital\\jakariaadnan\\EHospital\\HospitalManagementSystem\\obj\\",
+      "outputPath": "D:\\Ariful\\EHospital\\EHospital\\HospitalManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
